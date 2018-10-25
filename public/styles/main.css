@@ -47,7 +47,6 @@ header nav ul {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  
 }
 
 header nav ul li {
@@ -63,6 +62,42 @@ header nav ul li a {
 
 header nav ul li a:hover {
   color: #fcfcfc;
+}
+
+/* ===== Hero Section (About Us) */
+.about {
+  background: url('/public/images/facebook_cover_photo_2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 30rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.clickables .btn {
+  border: none;
+  outline: 0;
+  padding: .5rem 1.5rem;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+#join_us:hover {
+  background: #005994;
+  color: white;
+}
+
+#projects {
+  background-color: #001e32;
+  color: white;
+}
+
+#projects:hover {
+  background: rgba(165, 165, 165, 0.17);
+  color: white;
 }
 
 /* ====Media Queries ==== */
@@ -88,10 +123,11 @@ header nav ul li a:hover {
 
   header nav {
     width: 0;
+    font-size: small;
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 400px) {
   header {
     justify-content: center;
   }
