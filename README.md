@@ -26,7 +26,7 @@ Please ensure that you update your local branch before sending a PR, as conflict
 
 ### Tips to stay updated
 
-- `git add remote upstream <link/to/the/forked/repo`
+- `git remote add upstream <link/to/the/forked/repo`
 - `git fetch upstream` gets the updated version of this repo
 - `git merge upstream/master` this merges the fetched version with your local master
 - `git checkout <your own branch>` takes you to your working branch
@@ -34,7 +34,7 @@ Please ensure that you update your local branch before sending a PR, as conflict
 
 Now you are set to push
 
-- `git push origin <working branch>` this will update your forked repo
+- `git push origin <working branch` this will update your forked repo
 
 At this point you can send your PR.
 
