@@ -20,13 +20,15 @@ If you have ideas on how to enhance this project, please reach out to us [here](
 
 Thank you for your interest in adding value to our project. We emplore you to proceed the standards of github community regulations.
 
+You can checkout our [CONTRIBUTING](CONTRIBUTING.md) file for how to contribute to the project
+
 ## 🔌 Pull Requests
 
 Please ensure that you update your local branch before sending a PR, as conflicting PRs will not be attended to.
 
 ### Tips to stay updated
 
-- `git remote add upstream __<link/to/the/forked/repo>__`
+- `git remote add upstream <link/to/the/forked/repo>`
 - `git fetch upstream` gets the updated version of this repo
 - `git merge upstream/master` this merges the fetched version with your local master
 - `git checkout <your own branch>` takes you to your working branch
@@ -34,8 +36,22 @@ Please ensure that you update your local branch before sending a PR, as conflict
 
 Now you are set to push
 
-- `git push origin <working branch` this will update your forked repo
+- `git push origin <working branch>` this will update your forked repo
 
-At this point you can send your PR.
+At this point you can send your PR, for easier work flow, please take a screenshot of your changes and add them to your PR.
+
+### Take these steps for screenshot
+
+- Screenshot the changes on the code editor or web browser
+- Add your screenshots to the `img/screenshots/` directory
+- Add the image to your PR
 
 Thanks for contributing. You may add your name to the contributors file.
+
+## 👯 Contributors
+
+After a successful merging of your PR, please proceed with adding your details to the [contributors](contributors.md) file.
+
+## 👮 Code of Conduct
+
+In the bid to build a community where everyone can work together, please ensure you go through the [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md)
