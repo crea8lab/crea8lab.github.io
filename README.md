@@ -51,3 +51,7 @@ Thanks for contributing. You may add your name to the contributors file.
 ## 👯 Contributors
 
 After a successful merging of your PR, please proceed with adding your details to the [contributors](contributors.md) file.
+
+## 👮 Code of Conduct
+
+In the bid to build a community where everyone can work together, please ensure you go through the [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md)
