@@ -57,3 +57,5 @@ Add any other context about the problem here.
 ## Contributing
 
 You may have to read our [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md)
+
+After a successful PR & Merging of your PR, proceed with adding your details to the [contributors](contributors.md) file.

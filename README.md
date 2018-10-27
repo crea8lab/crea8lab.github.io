@@ -47,3 +47,7 @@ At this point you can send your PR, for easier work flow, please take a screensh
 - Add the image to your PR
 
 Thanks for contributing. You may add your name to the contributors file.
+
+## 👯 Contributors
+
+After a successful merging of your PR, please proceed with adding your details to the [contributors](contributors.md) file.
