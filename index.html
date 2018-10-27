@@ -28,9 +28,75 @@
       </ul>
     </nav>
   </header>
-    <!-- <div class = "empty">
+    <div class = "empty">
+      <button id="myBtn">Open Modal</button>
 
-    </div> -->
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+      <div class="tab">
+        <!-- <button class="tablinks" onclick="openCity(event, 'Login')">Login</button> -->
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">SignUp</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+      </div>
+      
+      <!-- <div id="Login" class="tabcontent"> -->
+        <div id="id01" class="login_modal">
+  
+          <form class="login_modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="login_close" title="Close Modal">&times;</span>
+              <img src="img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+        
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+                
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+        
+            <div class="login_container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="login_cancelbtn">Cancel</button>
+              <span class="login_psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+        
+      <!-- </div> -->
+      
+      <div id="Paris" class="tabcontent">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p> 
+      </div>
+      
+      <div id="Tokyo" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>
+
+    </div>
   <main>
  <!-- Footer -->
 <footer class="page-footer font-small unique-color-dark" id = "foter">
@@ -172,6 +238,7 @@
 
 </footer>
 <!-- Footer -->
+<script src="./modal.js"></script>
 <script src = "./bootstrap.min.js"></script>
 <script src = "jquery-3.3.1.min.js"></script>
 </body>
