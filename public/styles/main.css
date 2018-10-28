@@ -34,20 +34,20 @@ header {
   width: 100%;
   height: 100%;
 }
-.empty {
 
+.empty {
   padding: 150px;
   overflow: hidden;
   width: 100%;
   height: 500px;
   background: #001e32;
 }
+
 /* navigation bar */
 header nav {
   width: 38%;
   height: 35px;
   display: flex;
-
 }
 
 header nav ul {
@@ -107,6 +107,7 @@ header nav ul li a:hover {
   color: white;
 }
 
+/* ===== Footer ===== */
 .page-footer {
   background: #001e32;
 }
@@ -115,12 +116,27 @@ header nav ul li a:hover {
   color: #ffffff;
 }
 
-
-
 .company {
   font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
 }
+
+.deep-purple {
+  border-top: 2px solid #033557;
+}
+
+.company {
+  color: #b9b9b9;
+}
+
+.addr p {
+  color: #b9b9b9;
+}
+
+.mb-4 a:hover {
+  text-decoration: none;
+}
+
 i {
   color: #ffffff;
 }
