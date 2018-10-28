@@ -24,6 +24,8 @@ You can checkout our [CONTRIBUTING](CONTRIBUTING.md) file for how to contribute 
 
 ## 🔌 Pull Requests
 
+Do take a look at the [Pull Request Template](PULL_REQUEST_TEMPLATE.md)
+
 Please ensure that you update your local branch before sending a PR, as conflicting PRs will not be attended to.
 
 ### Tips to stay updated
