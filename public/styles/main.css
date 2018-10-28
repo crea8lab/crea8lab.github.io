@@ -35,12 +35,19 @@ header {
   height: 100%;
 }
 
+.empty {
+  padding: 150px;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+  background: #001e32;
+}
+
 /* navigation bar */
 header nav {
   width: 38%;
   height: 35px;
   display: flex;
-
 }
 
 header nav ul {
@@ -98,6 +105,330 @@ header nav ul li a:hover {
 #projects:hover {
   background: rgba(165, 165, 165, 0.17);
   color: white;
+}
+
+/* ===== Footer ===== */
+.page-footer {
+  background: #001e32;
+}
+
+#footer-content {
+  color: #ffffff;
+}
+
+.company {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+.deep-purple {
+  border-top: 2px solid #033557;
+}
+
+.company {
+  color: #b9b9b9;
+}
+
+.addr p {
+  color: #b9b9b9;
+}
+
+.mb-4 a:hover {
+  text-decoration: none;
+}
+
+i {
+  color: #ffffff;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+.text-uppercase {
+  color: #5a9dc9;
+}
+
+.footer-copyright {
+  color: #ffffff;
+}
+
+.mb-0 {
+  color: #1a719c;
+}
+
+
+.logo__footer {
+  margin: -3rem 0 -1rem -2.5rem;
+  width: 150px;
+  height: 150px;
+}
+
+.logo__footer img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  margin-left: 25%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 40px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 50%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: rgb(226, 17, 17);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #003457;
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+  
+}
+
+/* .modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+} */
+
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #003457;
+  
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: #003457;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 4px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #3a91cc;
+  color: #ffffff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  height: 100%;
+}
+
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 70%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-left: 4%;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+}
+
+.logbut {
+  background-color: #003457;
+  color: white;
+  padding: 14px 20px;
+  /* margin: 2px 0; */
+  border: none;
+  cursor: pointer;
+  width: 15%;
+  padding-top: 16px;
+  border-radius: 5%;
+  float: right;
+  margin-right: 9%;
+  text-align: center;
+  
+}
+
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.login_cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+.login_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.login_container1 {
+  padding: 16px;
+  margin-top:10px;
+}
+
+.loginput {
+  align-items: center;
+  margin-left: 4%;
+}
+
+.loginput3 {
+  justify-content: space-around;
+}
+
+span.login_psw {
+  float: right;
+  padding-top: 16px;
+  color: #fff
+}
+
+span.login_psw a {
+  color: #1890ff;
+}
+
+/* The Modal (background) */
+.login_modal {
+  display: none; /* Hidden by default */
+  /* position: fixed; Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 40%; /* Full width */
+  height: 40%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 30px;
+}
+
+/* Modal Content/Box */
+.login_modal-content {
+  height: 70%;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.login_psw {
+     display: block;
+     float: none;
+  }
+  .login_cancelbtn {
+     width: 100%;
+  }
 }
 
 /* ====Media Queries ==== */
