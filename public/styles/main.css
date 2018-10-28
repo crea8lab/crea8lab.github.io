@@ -17,12 +17,13 @@ body {
 
 header {
   background: #003457;
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
   position: fixed;
   width: 100%;
+  z-index: 1000;
 }
 
 .logo {
@@ -42,6 +43,7 @@ header {
   height: 500px;
   background: #001e32;
 }
+
 
 /* navigation bar */
 header nav {
