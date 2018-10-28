@@ -83,7 +83,6 @@ header nav ul li a:hover {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding-bottom: 1rem;
 }
 
 .clickables .btn {
