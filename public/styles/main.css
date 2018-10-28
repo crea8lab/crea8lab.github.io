@@ -92,6 +92,7 @@ header nav ul li a:hover {
   padding: .5rem 1.5rem;
   transition: all .2s ease-in-out;
   cursor: pointer;
+  border-radius: 0;
 }
 
 #join_us:hover {
@@ -252,7 +253,6 @@ i:hover {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #003457;
-  
 }
 
 /* Style the buttons inside the tab */
@@ -287,9 +287,6 @@ i:hover {
   height: 100%;
 }
 
-
-
-
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 70%;
@@ -298,17 +295,6 @@ input[type=text], input[type=password] {
   border: 1px solid #ccc;
   box-sizing: border-box;
   margin-left: 4%;
-}
-
-/* Set a style for all buttons */
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 10%;
 }
 
 .logbut {
@@ -326,7 +312,6 @@ button {
   text-align: center;
   
 }
-
 
 button:hover {
   opacity: 0.8;
