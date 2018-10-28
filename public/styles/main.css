@@ -108,15 +108,21 @@ header nav ul li a:hover {
 }
 
 .page-footer {
-  background: #d8e2e7;
+  background: #001e32;
 }
+
+#footer-content {
+  color: #ffffff;
+}
+
+
 
 .company {
   font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
 }
 i {
-  color: #003457;
+  color: #ffffff;
 }
 
 i:hover {
@@ -124,7 +130,11 @@ i:hover {
 }
 
 .text-uppercase {
-  color: #003457;
+  color: #5a9dc9;
+}
+
+.footer-copyright {
+  color: #ffffff;
 }
 
 .mb-0 {
@@ -138,11 +148,11 @@ i:hover {
   margin-left: 25%;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 40px; /* Location of the box */
   left: 0;
   top: 0;
   width: 50%; /* Full width */
-  height: 60%; /* Full height */
+  height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
@@ -156,6 +166,7 @@ i:hover {
   padding: 0;
   border: 1px solid #888;
   width: 80%;
+  height: 100%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -176,7 +187,7 @@ i:hover {
 
 /* The Close Button */
 .close {
-  color: white;
+  color: rgb(226, 17, 17);
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -191,40 +202,45 @@ i:hover {
 
 .modal-header {
   padding: 2px 16px;
-  background-color: #5cb85c;
+  background-color: #003457;
   color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+  padding: 2px 16px;
+  
+}
 
-.modal-footer {
+/* .modal-footer {
   padding: 2px 16px;
   background-color: #5cb85c;
   color: white;
-}
+} */
 
 
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  background-color: #003457;
+  
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-  background-color: inherit;
+  background-color: #003457;
   float: left;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 14px 4px;
   transition: 0.3s;
   font-size: 17px;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #3a91cc;
+  color: #ffffff;
 }
 
 /* Create an active/current tablink class */
@@ -238,6 +254,7 @@ i:hover {
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+  height: 100%;
 }
 
 
@@ -245,12 +262,12 @@ i:hover {
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
+  width: 70%;
+  padding: 8px 10px;
   margin: 8px 0;
-  display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  margin-left: 4%;
 }
 
 /* Set a style for all buttons */
@@ -263,6 +280,23 @@ button {
   cursor: pointer;
   width: 10%;
 }
+
+.logbut {
+  background-color: #003457;
+  color: white;
+  padding: 14px 20px;
+  /* margin: 2px 0; */
+  border: none;
+  cursor: pointer;
+  width: 15%;
+  padding-top: 16px;
+  border-radius: 5%;
+  float: right;
+  margin-right: 9%;
+  text-align: center;
+  
+}
+
 
 button:hover {
   opacity: 0.8;
@@ -283,36 +317,56 @@ button:hover {
 }
 
 img.avatar {
-  width: 40%;
+  width: 20%;
   border-radius: 50%;
 }
-
 .login_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.login_container1 {
   padding: 16px;
+  margin-top:10px;
+}
+
+.loginput {
+  align-items: center;
+  margin-left: 4%;
+}
+
+.loginput3 {
+  justify-content: space-around;
 }
 
 span.login_psw {
   float: right;
   padding-top: 16px;
+  color: #fff
+}
+
+span.login_psw a {
+  color: #1890ff;
 }
 
 /* The Modal (background) */
 .login_modal {
   display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  /* position: fixed; Stay in place */
+  z-index: 100; /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  width: 40%; /* Full width */
+  height: 40%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 /* Modal Content/Box */
 .login_modal-content {
+  height: 70%;
   background-color: #fefefe;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
@@ -320,20 +374,7 @@ span.login_psw {
 }
 
 /* The Close Button (x) */
-.login_close {
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
 
-.login_close:hover,
-.login_close:focus {
-  color: red;
-  cursor: pointer;
-}
 
 /* Add Zoom Animation */
 .animate {
