@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Image Replacement */
+.logo_text {
+  overflow: hidden;
+  position: absolute;
+  left: -100rem;
+  top: 0;
+}
+
+header {
+  background: #003457;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+/* navigation bar */
+header nav {
+  width: 38%;
+  height: 35px;
+  display: flex;
+
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 1rem 1rem;
+  text-decoration: none;
+  color: #fcfcfc8a;
+  transition: all .2s ease-in-out;
+}
+
+header nav ul li a:hover {
+  color: #fcfcfc;
+}
+
+/* ===== Hero Section (About Us) */
+.about {
+  background: url('/public/images/facebook_cover_photo_2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 23rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.clickables .btn {
+  border: none;
+  outline: 0;
+  padding: .5rem 1.5rem;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+#join_us:hover {
+  background: #005994;
+  color: white;
+}
+
+#projects {
+  background-color: #001e32;
+  color: white;
+}
+
+#projects:hover {
+  background: rgba(165, 165, 165, 0.17);
+  color: white;
+}
+
+h4{
+  font-weight: bold;
+  font-family: sans-serif
+}
+
+span{
+  font-style: italic;
+}
+
+h5{
+  font-display: 2;
+  font-weight: 700;
+}
+
+p{
+  background-color: rgba(220, 220, 220, 0.17);
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.project-owner{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+
+.btn{
+  border: none;
+  outline: 0;
+  padding: .5rem 1.5rem;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+  background: #005994;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle{
+  background: #005994;
+  border: 0;
+}
+
+
+
+.fab {
+  font-size: 25px;
+  /* text-align: center; */
+  text-decoration: none;
+  transition: all  3s ease-in-out transform background opacity; 
+}
+
+.fab:hover {
+  opacity: 2;
+  transform: scale(1.07);
+}
+
+.card{
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px 0px;
+  transition: 3s ease-in-out transform opacity box-shadow; 
+  margin-top: 2rem
+
+}
+
+.card:hover{
+  transform: scale(1.01);
+  opacity: 1;
+  box-shadow: 0px 0px 8px 1px;
+  background: #ebeef0
+}
+
+.card-deck{
+  margin: 2rem;
+}
+
+.card-section{
+  background: #003457;
+  height: 95rem;
+}
+
+/* ====Media Queries ==== */
+
+@media (max-width: 1050px) {
+  header nav {
+    position: relative;
+    right: 10rem;
+  }
+}
+
+@media (max-width: 800px) {
+  header nav {
+    right: 15rem;
+  }
+}
+
+@media (max-width: 650px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav {
+    width: 0;
+    font-size: small;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    justify-content: center;
+  }
+
+  header nav {
+    display: none;
+  }
+}
