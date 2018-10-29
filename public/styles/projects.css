@@ -23,6 +23,7 @@ header {
   padding: 0 2rem;
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
 
 .logo {
@@ -77,23 +78,6 @@ header nav ul li a:hover {
   padding-bottom: 1rem;
 }
 
-.clickables .btn {
-  border: none;
-  outline: 0;
-  padding: .5rem 1.5rem;
-  transition: all .2s ease-in-out;
-  cursor: pointer;
-}
-
-#join_us:hover {
-  background: #005994;
-  color: white;
-}
-
-#projects {
-  background-color: #001e32;
-  color: white;
-}
 
 #projects:hover {
   background: rgba(165, 165, 165, 0.17);
@@ -111,13 +95,28 @@ span{
 
 h5{
   font-display: 2;
-  font-weight: 700;
+  font-weight: 500;
+}
+
+i{
+  color: #001e32
 }
 
 p{
-  background-color: rgba(220, 220, 220, 0.17);
+  background-color: rgba(240, 236, 236, 0.17);
   font-family: sans-serif;
   font-weight: 500;
+}
+
+.wrapper{
+  height: 15rem;
+}
+
+
+
+.card-img-top{
+  height: 100%;
+  width: 100%;
 }
 
 .project-owner{
@@ -139,15 +138,23 @@ p{
 
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
-  background: #005994;
+  background: #003457;
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle{
-  background: #005994;
+  background: #003457;
   border: 0;
 }
 
+.btn-secondary:not(:disabled):not(.disabled).active:hover{
+  background: #001e32;
+  transform: scaleX(1.03)
+}
 
+.btn-primary:not(:disabled):not(.disabled).active:hover{
+  background: #001e32;
+  transform: scale(1.03)
+}
 
 .fab {
   font-size: 25px;
@@ -157,23 +164,25 @@ p{
 }
 
 .fab:hover {
-  opacity: 2;
+  opacity: 1;
   transform: scale(1.07);
 }
 
 .card{
   text-align: center;
   border-radius: 8px;
-  box-shadow: 0px 1px 2px 0px;
+  box-shadow: 0px 0px 0px 0px;
   transition: 3s ease-in-out transform opacity box-shadow; 
-  margin-top: 2rem
+  margin-top: 2rem;
+  z-index: 1;
+  height: 100%;
 
 }
 
 .card:hover{
-  transform: scale(1.01);
+  transform: scale(1.03);
   opacity: 1;
-  box-shadow: 0px 0px 8px 1px;
+  box-shadow: 0px 0px 8px 2px;
   background: #ebeef0
 }
 
@@ -182,8 +191,9 @@ p{
 }
 
 .card-section{
-  background: #003457;
-  height: 95rem;
+  background: #ececec;
+  height: 91rem;
+  border-radius: 5px
 }
 
 /* ====Media Queries ==== */
