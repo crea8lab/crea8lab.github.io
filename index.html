@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" href="./public/images/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="./public/styles/main.css">
-  <link rel="stylesheet" href="./bootstrap.min.css">
+  <link rel="stylesheet" href="./public//styles/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>crea8lab - Building The Future</title>
 </head>
@@ -24,264 +24,292 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#tutorials">Tutorials</a></li>
         <li><a href="#community">Community</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="./public/pages/contact_us.html">Contact</a></li>
       </ul>
     </nav>
   </header>
-    <div class = "empty">
-      <button id="myBtn">Join Us</button>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header">
-        <h2>Join Us</h2>
-      <span class="close">&times;</span>
-      
-    </div>
-    <div class="modal-body">
-      <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'London')">Login</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')">SignUp</button>
-        
+  <main>
+    <!-- Aboout Us -->
+    <section class="about content_wrapper" id="about">
+      <div class="info_section">
+        <p class="clickables">
+          <button class="btn" id="join_us">Join Us</button>
+          <button class="btn" id="projects">
+            See Projects
+          </button>
+        </p>
       </div>
-      
-      <div id="London" class="tabcontent">
-        <div>
-  
-          <form class="login_modal-content animate" action="/action_page.php">
-            <div class="imgcontainer">
-              <!-- <span onclick="document.getElementById('London').style.display='none'" class="login_close" title="Close Modal">&times;</span> -->
-              <img src="./public/images/index.jpeg" alt="Avatar" class="avatar">
-            </div>
-        
-            <div class="login_container">
-              <div class="loginput">
-                <label for="uname"><b>Username</b></label>
-              <input type="text" placeholder="Enter Username" name="uname" required>
-              </div>
-        
-             <div class="loginput">
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
-             </div>
-                
-              <div class="loginput">
-                
-              <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-              </label>
-              <button class="logbut" type="submit">Login</button>
-              </div>
-            </div>
-        
-            <div class="login_container1" style="background-color:#003457">
-              <button type="button" onclick="document.getElementById('London').style.display='none'" class="login_cancelbtn">Cancel</button>
-              <span class="login_psw">Forgot <a href="#">password?</a></span>
-            </div>
-          </form>
-        </div>
-        
-      </div>
-      
-      <div id="Paris" class="tabcontent">
-        
-        <div class = "reg">
-          <form class="reg-modal-content" action="/action_page.php">
-            
-            <div class="reg-container">
-              <!-- <h1>Sign Up</h1> -->
-              <h4 id = "instruct">Please fill in this form to create an account.</h4>
-              <hr>
-              <div class = "reginput">
-                <label for="email"><b>Username</b></label>
-              <input type="text" placeholder="Username" name="name" required>
-              </div>
+    </section>
 
-              <div class = "reginput">
-                <label for="email"><b>Email</b></label>
-              <input type="text" placeholder="Enter Email" name="email" required>
-              </div>
-        
-              <div class = "reginput">
-                <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
-              </div>
-        
-              <div class = "reginput">
-                <label for="psw-repeat"><b>Repeat Password</b></label>
-              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-              </div>
-              
-              <label>
-                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-              </label>
-        
-              <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-        
-              <div class="clearfix">
-                <button type="button" onclick="document.getElementById('Paris').style.display='none'" class="regcancelbtn">Cancel</button>
-                <button type="submit" class="signupbtn">Sign Up</button>
-              </div>
-            </div>
-          </form>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Join Us</h2>
+          <span class="close">&times;</span>
+    
         </div>
+        <div class="modal-body">
+          <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')">Login</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">SignUp</button>
+    
+          </div>
+    
+          <div id="London" class="tabcontent">
+            <div>
+    
+              <form class="login_modal-content animate" action="/action_page.php">
+                <div class="imgcontainer">
+                  <!-- <span onclick="document.getElementById('London').style.display='none'" class="login_close" title="Close Modal">&times;</span> -->
+                  <img src="./public/images/index.jpeg" alt="Avatar" class="avatar">
+                </div>
+    
+                <div class="login_container">
+                  <div class="loginput">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                  </div>
+    
+                  <div class="loginput">
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                  </div>
+    
+                  <div class="loginput">
+    
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                    <button class="logbut" type="submit">Login</button>
+                  </div>
+                </div>
+    
+                <div class="login_container1" style="background-color:#003457">
+                  <button type="button" onclick="document.getElementById('London').style.display='none'" class="login_cancelbtn">Cancel</button>
+                  <span class="login_psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form>
+            </div>
+    
+          </div>
+    
+          <div id="Paris" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p>
+    
+            <div>
+    
+              <form class="login_modal-content animate" action="/action_page.php">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="login_close" title="Close Modal">&times;</span>
+                  <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                </div>
+    
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+    
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+    
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+    
+                <div class="login_container" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="login_cancelbtn">Cancel</button>
+                  <span class="login_psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form>
+            </div>
+    
+    
+          </div>
+        </div>
+<<<<<<< HEAD
         
         
 
+||||||| merged common ancestors
+        
+
+=======
+>>>>>>> master
       </div>
     </div>
     
-  </div>
+    <!-- infomaatics -->
+    <section class="infomatics content_wrapper">
+      <div class="info__box learn">
+    
+        <h3>learn</h3>
+      </div>
+      <div class="info__box connect">
+        <h3>connect</h3>
+      </div>
+      <div class="info__box build">
+        <h3>build</h3>
+      </div>
+    </section>
+  </main>
 
-</div>
+  <!-- Footer -->
+  <footer class="page-footer font-small unique-color-dark" id ="foter">
 
+    <div style="background-color: #003457; color: #ffffff">
+      <div class="container" style=" color: #ffffff">
+
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0">Get connected with us on social networks!</h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fa fa-facebook white-text mr-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fa fa-twitter white-text mr-4"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fa fa-google-plus white-text mr-4"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fa fa-linkedin white-text mr-4"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fa fa-instagram white-text"> </i>
+            </a>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+      </div>
     </div>
-  <main>
- <!-- Footer -->
-<footer class="page-footer font-small unique-color-dark" id = "foter">
 
-  <div style="background-color: #003457; color: #ffffff">
-    <div class="container" style=" color: #ffffff">
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5" id = "footer-content">
 
-      <!-- Grid row-->
-      <div class="row py-4 d-flex align-items-center">
+      <!-- Grid row -->
+      <div class="row mt-3">
 
         <!-- Grid column -->
-        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-          <h6 class="mb-0">Get connected with us on social networks!</h6>
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">Crea8lab</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+          <div class="logo__footer">
+            <a href="#hero">
+
+              <img src="./public/images/logo_transparent.png" alt="createlab logo">
+            </a>
+          </div>
+            
+          <p class = "company">Crea8lab is an open source community that encourages developers to contribute and learn together.</p>
+
         </div>
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-6 col-lg-7 text-center text-md-right">
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 
-          <!-- Facebook -->
-          <a class="fb-ic">
-            <i class="fa fa-facebook white-text mr-4"> </i>
-          </a>
-          <!-- Twitter -->
-          <a class="tw-ic">
-            <i class="fa fa-twitter white-text mr-4"> </i>
-          </a>
-          <!-- Google +-->
-          <a class="gplus-ic">
-            <i class="fa fa-google-plus white-text mr-4"> </i>
-          </a>
-          <!--Linkedin -->
-          <a class="li-ic">
-            <i class="fa fa-linkedin white-text mr-4"> </i>
-          </a>
-          <!--Instagram-->
-          <a class="ins-ic">
-            <i class="fa fa-instagram white-text"> </i>
-          </a>
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Projects</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="https://github.com/phavor/cheetbook" target="_blank">CheetBook</a>
+          </p>
+          <p>
+            <a href="#!">Crunchy App</a>
+          </p>
+          <p>
+            <a href="#!">CourSeek</a>
+          </p>
+          <p>
+            <a href="#!">RechargeTracker</a>
+          </p>
 
         </div>
         <!-- Grid column -->
 
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!">Github.com/phavor</a>
+          </p>
+          <p>
+            <a href="#!">Become a Team</a>
+          </p>
+          <p>
+            <a href="#!">Requirements</a>
+          </p>
+          <p>
+            <a href="#!">Help</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 addr">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fa fa-home mr-3"></i>44 Owerri Road Aba, Abia State. Nigeria</p>
+            <p>
+              <i class="fa fa-envelope mr-3"></i> info@slack.com/synthesis</p>
+            <p>
+              <i class="fa fa-phone mr-3"></i> + 234 905 4374 294</p>
+            <p>
+              <i class="fa fa-print mr-3"></i> + 234 813 0980 432</p>
+        </div>
+        <!-- Grid column -->
+
       </div>
-      <!-- Grid row-->
+      <!-- Grid row -->
 
     </div>
-  </div>
+    <!-- Footer Links -->
 
-  <!-- Footer Links -->
-  <div class="container text-center text-md-left mt-5" id = "footer-content">
-
-    <!-- Grid row -->
-    <div class="row mt-3">
-
-      <!-- Grid column -->
-      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-
-        <!-- Content -->
-        <h6 class="text-uppercase font-weight-bold">Crea8lab</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p class = "company">Crea8lab is an open source community that encourages developers to contribute to some of our projects we have ongoing. We accomodate developers who are willing to work as teams in achieving a goal.</p>
-
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-
-        <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold">Projects</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>
-          <a href="#!">CheatSheet</a>
-        </p>
-        <p>
-          <a href="#!">Crunchy App</a>
-        </p>
-        <p>
-          <a href="#!">CourSeek</a>
-        </p>
-        <p>
-          <a href="#!">RechargeTracker</a>
-        </p>
-
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-
-        <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>
-          <a href="#!">Github.com/phavor</a>
-        </p>
-        <p>
-          <a href="#!">Become a Team</a>
-        </p>
-        <p>
-          <a href="#!">Requirements</a>
-        </p>
-        <p>
-          <a href="#!">Help</a>
-        </p>
-
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-
-        <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold">Contact</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>
-          <i class="fa fa-home mr-3"></i>44 Owerri Road Aba, Abia State. Nigeria</p>
-          <p>
-            <i class="fa fa-envelope mr-3"></i> info@slack.com/synthesis</p>
-          <p>
-            <i class="fa fa-phone mr-3"></i> + 234 905 4374 294</p>
-          <p>
-            <i class="fa fa-print mr-3"></i> + 234 813 0980 432</p>
-      </div>
-      <!-- Grid column -->
-
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/bootstrap-tutorial/"> Crea8lab.com</a>
     </div>
-    <!-- Grid row -->
+    <!-- Copyright -->
 
-  </div>
-  <!-- Footer Links -->
+  </footer>
+  <!-- Footer -->
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2018 Copyright:
-    <a href="https://mdbootstrap.com/bootstrap-tutorial/"> Crea8lab.com</a>
-  </div>
-  <!-- Copyright -->
-
-</footer>
-<!-- Footer -->
-<script src="./modal.js"></script>
-<script src = "./bootstrap.min.js"></script>
-<script src = "jquery-3.3.1.min.js"></script>
+  <script src="./src/lib/bootstrap.min.js"></script>
+  <script src = "./src/lib/jquery-3.3.1.min.js"></script>
+  <script src = "./src/lib/modal.js"></script>
 </body>
 </html>

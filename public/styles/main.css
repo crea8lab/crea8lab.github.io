@@ -17,12 +17,13 @@ body {
 
 header {
   background: #003457;
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
   position: fixed;
   width: 100%;
+  z-index: 1000;
 }
 
 .logo {
@@ -34,20 +35,21 @@ header {
   width: 100%;
   height: 100%;
 }
-.empty {
 
+.empty {
   padding: 150px;
   overflow: hidden;
   width: 100%;
   height: 500px;
   background: #001e32;
 }
+
+
 /* navigation bar */
 header nav {
   width: 38%;
   height: 35px;
   display: flex;
-
 }
 
 header nav ul {
@@ -81,7 +83,6 @@ header nav ul li a:hover {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding-bottom: 1rem;
 }
 
 .clickables .btn {
@@ -90,6 +91,7 @@ header nav ul li a:hover {
   padding: .5rem 1.5rem;
   transition: all .2s ease-in-out;
   cursor: pointer;
+  border-radius: 0;
 }
 
 #join_us:hover {
@@ -107,6 +109,7 @@ header nav ul li a:hover {
   color: white;
 }
 
+/* ===== Footer ===== */
 .page-footer {
   background: #001e32;
 }
@@ -115,12 +118,27 @@ header nav ul li a:hover {
   color: #ffffff;
 }
 
-
-
 .company {
   font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
 }
+
+.deep-purple {
+  border-top: 2px solid #033557;
+}
+
+.company {
+  color: #b9b9b9;
+}
+
+.addr p {
+  color: #b9b9b9;
+}
+
+.mb-4 a:hover {
+  text-decoration: none;
+}
+
 i {
   color: #ffffff;
 }
@@ -139,6 +157,18 @@ i:hover {
 
 .mb-0 {
   color: #1a719c;
+}
+
+
+.logo__footer {
+  margin: -3rem 0 -1rem -2.5rem;
+  width: 150px;
+  height: 150px;
+}
+
+.logo__footer img {
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -222,7 +252,6 @@ i:hover {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #003457;
-  
 }
 
 /* Style the buttons inside the tab */
@@ -257,9 +286,6 @@ i:hover {
   height: 100%;
 }
 
-
-
-
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 70%;
@@ -268,17 +294,6 @@ input[type=text], input[type=password] {
   border: 1px solid #ccc;
   box-sizing: border-box;
   margin-left: 4%;
-}
-
-/* Set a style for all buttons */
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 10%;
 }
 
 .logbut {
@@ -296,7 +311,6 @@ button {
   text-align: center;
   
 }
-
 
 button:hover {
   opacity: 0.8;
