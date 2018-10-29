@@ -439,3 +439,122 @@ span.login_psw a {
     display: none;
   }
 }
+
+
+/* Full-width input fields */
+.reg-modal-content input[type=text], .reg-modal-content input[type=password] {
+  width: 70%;
+  padding: 5px;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+.reg-modal-content input[type=text]:focus, .reg-modal-content input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+.signupbtn {
+  background-color: #003457;
+  color: white;
+  padding: 10px 15px;
+  margin-left: 60%;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.signupbtn:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.regcancelbtn {
+  padding: 10px 15px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.regcancelbtn, .signupbtn {
+/* float: left; */
+width: 20%;
+border-radius: 5%;
+}
+
+/* Add padding to container elements */
+.reg-container {
+  padding: 10px;
+  
+}
+
+/* .reg {
+  height: 200px;
+} */
+
+
+
+
+/* Modal Content/Box */
+.reg-modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.clearfix {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .regcancelbtn, .signupbtn {
+     width: 50%;
+
+  }
+}
+
+.reginput {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reginput label {
+  margin-top: 10px;
+}
+
+#instruct {
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  background-color: #003457;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.reg {
+  margin-top: -10px
+}
+
+.modal-header span {
+  color: red;
+}
