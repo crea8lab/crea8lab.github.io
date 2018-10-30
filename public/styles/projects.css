@@ -1,118 +1,41 @@
-* {
-  margin: 0;
-  padding: 0;
+/* Style Cards */
+.wrapper {
+  height: 12rem;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+.card-body {
+  color: #515151;
 }
 
-/* Image Replacement */
-.logo_text {
-  overflow: hidden;
-  position: absolute;
-  left: -100rem;
-  top: 0;
-}
-
-header {
-  background: #003457;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
-  position: fixed;
-  width: 100%;
-  z-index: 2;
-}
-
-.logo {
-  width: 70px;
-  height: 70px;
-}
-
-.logo img {
-  width: 100%;
+.card{
+  /* text-align: center; */
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 0px;
+  margin-top: 2rem;
+  z-index: 1;
   height: 100%;
+  border: none;
+  background: #f7f7f7;
+  transition: transform .2s ease-in-out;
 }
 
-/* navigation bar */
-header nav {
-  width: 38%;
-  height: 35px;
-  display: flex;
-
+.card:hover{
+  transform: scale(1.03);
+  opacity: 1;
+  box-shadow: 0px 0px 8px 2px;
+  background: #ebeef0;
+  border: none;
 }
 
-header nav ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+.card-deck{
+  margin: 2rem;
 }
 
-header nav ul li {
-  list-style: none;
+.card-section{
+  height: auto;
+  padding: 1.5rem 0;
+  border-radius: 5px;
 }
-
-header nav ul li a {
-  padding: 1rem 1rem;
-  text-decoration: none;
-  color: #fcfcfc8a;
-  transition: all .2s ease-in-out;
-}
-
-header nav ul li a:hover {
-  color: #fcfcfc;
-}
-
-/* ===== Hero Section (About Us) */
-.about {
-  background: url('/public/images/facebook_cover_photo_2.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 23rem;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding-bottom: 1rem;
-}
-
-
-#projects:hover {
-  background: rgba(165, 165, 165, 0.17);
-  color: white;
-}
-
-h4{
-  font-weight: bold;
-  font-family: sans-serif
-}
-
-span{
-  font-style: italic;
-}
-
-h5{
-  font-display: 2;
-  font-weight: 500;
-}
-
-i{
-  color: #001e32
-}
-
-p{
-  background-color: rgba(240, 236, 236, 0.17);
-  font-family: sans-serif;
-  font-weight: 500;
-}
-
-.wrapper{
-  height: 15rem;
-}
-
-
 
 .card-img-top{
   height: 100%;
@@ -125,7 +48,6 @@ p{
   justify-content: space-around;
 }
 
-
 .btn{
   border: none;
   outline: 0;
@@ -135,7 +57,6 @@ p{
   margin-left: 10px;
   margin-right: 10px;
 }
-
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
   background: #003457;
@@ -158,7 +79,7 @@ p{
 
 .fab {
   font-size: 25px;
-  /* text-align: center; */
+  color: #656363;
   text-decoration: none;
   transition: all  3s ease-in-out transform background opacity; 
 }
@@ -166,69 +87,4 @@ p{
 .fab:hover {
   opacity: 1;
   transform: scale(1.07);
-}
-
-.card{
-  text-align: center;
-  border-radius: 8px;
-  box-shadow: 0px 0px 0px 0px;
-  transition: 3s ease-in-out transform opacity box-shadow; 
-  margin-top: 2rem;
-  z-index: 1;
-  height: 100%;
-
-}
-
-.card:hover{
-  transform: scale(1.03);
-  opacity: 1;
-  box-shadow: 0px 0px 8px 2px;
-  background: #ebeef0
-}
-
-.card-deck{
-  margin: 2rem;
-}
-
-.card-section{
-  background: #ececec;
-  height: 91rem;
-  border-radius: 5px
-}
-
-/* ====Media Queries ==== */
-
-@media (max-width: 1050px) {
-  header nav {
-    position: relative;
-    right: 10rem;
-  }
-}
-
-@media (max-width: 800px) {
-  header nav {
-    right: 15rem;
-  }
-}
-
-@media (max-width: 650px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header nav {
-    width: 0;
-    font-size: small;
-  }
-}
-
-@media (max-width: 400px) {
-  header {
-    justify-content: center;
-  }
-
-  header nav {
-    display: none;
-  }
 }
