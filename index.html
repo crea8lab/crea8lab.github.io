@@ -35,11 +35,11 @@
       <div class="info_section">
         <p class="clickables">
           <button class="btn" id="join_us">Join Us</button>
-          <button class="btn" id="projects">
-            <a href="./public/pages/projects.html">
+          <a href="./public/pages/projects.html">
+            <button class="btn" id="projects">
               See Projects
-            </a>
-          </button>
+            </button>
+          </a>
         </p>
       </div>
     </section>
@@ -52,7 +52,6 @@
         <div class="modal-header">
           <h2>Join Us</h2>
           <span class="close">&times;</span>
-    
         </div>
         <div class="modal-body">
           <div class="tab">
@@ -102,51 +101,45 @@
         </div>
       
         <div id="Paris" class="tabcontent">
-              
-              <div class="reg-container">
-                <!-- <h1>Sign Up</h1> -->
-                <h4 id = "instruct">Please fill in this form to create an account.</h4>
-                <hr>
-                <div class = "reginput">
-                  <label for="email"><b>Username</b></label>
-                <input type="text" placeholder="Username" name="name" required>
-                </div>
-                <div class = "reginput">
-                  <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
-                </div>
+          <form>
+            <div class="reg-container">
+              <!-- <h1>Sign Up</h1> -->
+              <h4 id = "instruct">Please fill in this form to create an account.</h4>
+              <hr>
+              <div class = "reginput">
+                <label for="email"><b>Username</b></label>
+              <input type="text" placeholder="Username" name="name" required>
+              </div>
+              <div class = "reginput">
+                <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+              </div>
+      
+              <div class = "reginput">
+                <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+              </div>
         
-                <div class = "reginput">
-                  <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-                </div>
-          
-                <div class = "reginput">
-                  <label for="psw-repeat"><b>Repeat Password</b></label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-                </div>
-                
-                <label>
-                  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-                </label>
+              <div class = "reginput">
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
               </div>
-          
               
-                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-          
-                <div class="clearfix">
-                  <button type="button" onclick="document.getElementById('Paris').style.display='none'" class="regcancelbtn">Cancel</button>
-                  <button type="submit" class="signupbtn">Sign Up</button>
-                </div>
-              </div>
-            </form>
-          </div>
-          
-          
-        </div>
-      </div>
-     </div>
-          </div>
+              <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+              </label>
+            </div>
+        
+            
+            <p>By creating an account you agree to our 
+              <a href="#" style="color:dodgerblue">Terms & Privacy</a>.
+            </p>
+        
+            <div class="clearfix">
+                <button type="button" onclick="document.getElementById('Paris').style.display='none'" class="regcancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>

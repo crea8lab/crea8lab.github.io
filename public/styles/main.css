@@ -160,7 +160,6 @@ i:hover {
   color: #1a719c;
 }
 
-
 .logo__footer {
   margin: -3rem 0 -1rem -2.5rem;
   width: 150px;
@@ -533,6 +532,7 @@ hr {
 .tabcontent p {
   margin-bottom: -3px;
 }
+
 /* Clear floats */
 .clearfix::after {
   content: "";
@@ -577,7 +577,7 @@ hr {
 /* resolve conflicts */
 
 header nav {
-  display: none;
+  display: flex;
 }
 
 /* Full-width input fields */
