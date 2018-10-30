@@ -71,6 +71,7 @@ header nav ul li a {
 
 header nav ul li a:hover {
   color: #fcfcfc;
+  text-decoration: none;
 }
 
 /* ===== Hero Section (About Us) */
