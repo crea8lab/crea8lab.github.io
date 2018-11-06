@@ -118,6 +118,14 @@ header nav ul li a:hover {
   height: 20rem;
 }
 
+.info__box {
+  width: 22.22%;
+}
+
+.fab, .fas {
+  color: #003457;
+}
+
 /* ===== Footer ===== */
 .page-footer {
   background: #001e32;
