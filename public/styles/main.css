@@ -119,11 +119,31 @@ header nav ul li a:hover {
 }
 
 .info__box {
-  width: 22.22%;
+  width: 18.18%;
+  text-align: center;
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.1);
+  padding: 0 .8rem;
+  border-radius: .3rem;
+}
+
+.info__box h3 {
+  padding: .5rem 0;
+}
+
+.info__box p {
+  color: #888;
+  font-weight: 300;
+  font-size: .9rem;
+  padding-bottom: 1rem;
 }
 
 .fab, .fas {
   color: #003457;
+  font-size: 4rem;
+}
+
+.icon_wrap {
+  padding: 1.5rem;
 }
 
 /* ===== Footer ===== */
