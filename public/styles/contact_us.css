@@ -1,6 +1,6 @@
 html, body {
 	margin: 0;
-	height: 100%;
+	padding: 0;
 }
 
 body{
@@ -12,7 +12,6 @@ body{
 	background: linear-gradient(45deg, rgba(43,88,118,1) 0%, rgba(78,67,118,1) 100%); /* w3c */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e4376', endColorstr='#2b5876',GradientType=1 ); /* ie6-9 */
 	background-repeat: no-repeat;
-	display: flex;
 }
 
 /* Image Replacement */
@@ -30,7 +29,9 @@ header {
   align-items: center;
   padding: 0 2rem;
   position: fixed;
-  width: 100%;
+	width: 100%;
+	top: 0;
+	z-index: 10;
 }
 
 .logo {
@@ -60,3 +61,4 @@ main {
 .bold {
 	font-weight: bold;
 }
+
