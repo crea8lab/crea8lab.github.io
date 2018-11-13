@@ -47,7 +47,7 @@ header {
 main {
 	font-family: 'Open Sans', sans-serif;
 	color: #8d9096;
-	margin: 20% 10%;
+	margin: 20.5% 10%;
 }
 
 .font-jumbo {
@@ -62,12 +62,45 @@ main {
 	font-weight: bold;
 }
 
+/* ====== Messenger Section ======= */
 .messenger {
 	background: #f9f9f9;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding: 2rem 0;
+}
+
+.messenger .header {
+	padding: 1rem 0;
+}
+
+.messenger .header h2 {
+	font-weight: 300;
+	font-size: 3rem;
+}
+
+form {
+	width: 40%;
+}
+
+.form-group input,
+textarea, button {
+	width: 100%;
+	border: none;
+	padding: .5rem;
+}
+
+.form-group button {
+	background: #033557;
+	color: #f9f9f9;
+	cursor: pointer;
+	transition: background .2s ease-in-out;
+}
+
+.form-group button:hover {
+	background: #001e32;
 }
 
 /* ===== Footer ===== */
