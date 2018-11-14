@@ -95,6 +95,8 @@ textarea, button {
 	width: 100%;
 	border: none;
 	padding: .5rem;
+	background: #dedede;
+	color: #4e4e4e;
 }
 
 .form-group button {
